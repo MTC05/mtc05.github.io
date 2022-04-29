@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+img {
+  position: absolute;
+  height: 10rem;
+  width: 40rem;
+  top: 5rem;
+  left: 2rem;
+}
+
+.body {
+  background: url("/img/bg.png");
+  min-height: 100vh;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#board {
+  background-image: url("/img/board.jpg");
+  margin-top: 15rem;
+  margin-right: 5rem;
+  width: 80rem;
+  height: 50rem;
+  background-repeat: round;
+  border: .5rem solid rgb(0, 0, 0);
+  display: grid;
+  grid-template-rows: repeat(20, 1fr);
+  grid-template-columns: repeat(32, 1fr);
+}
+
+#statbox{
+  position: absolute;
+  top:6rem;
+  right: 10rem;
+}
+#showScore {
+  color: rgb(220, 220, 129);
+  stroke: black;
+  letter-spacing:.3rem;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: "New Tegomin", serif;
+}
+
+#showHscore {
+
+  color: rgb(220, 220, 129);
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000,
+    2px 2px 0 #000;
+  letter-spacing:.3rem;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: "New Tegomin", serif;
+}
+
+.head {
+  background: linear-gradient(rgb(67, 243, 93), rgba(239, 223, 3, 0.93));
+  border: .2rem solid rgb(34, 4, 34);
+  transform: scale(1.08);
+  border-radius: .8rem;
+}
+
+.snake {
+  background: linear-gradient(rgb(46, 174, 65), rgba(239, 223, 3, 0.93));
+  border: 0.25vmin solid rgb(28, 4, 4);
+  border-radius: 1rem;
+}
+
+.food {
+  background: linear-gradient(rgb(255, 0, 93), rgba(66, 22, 34, 0.764));
+  border: 0.25vmin solid rgb(67, 7, 7);
+  border-radius: 1.2rem;
+}
+
+
+
+@media (max-width:998px){
+  html{
+    font-size: 55%;
+  }
+
+}
+
+
+@media (max-width:768px){
+  html{
+    font-size: 45%;
+  }
+
+}
+
+@media (max-width:500px){
+  html{
+    font-size: 35%;
+  }
+
+}
